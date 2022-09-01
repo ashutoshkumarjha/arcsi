@@ -582,6 +582,9 @@ class ARCSISensorFactory(object):
         elif sensor == 'pleiades':
             from arcsilib.arcsisensorpleiades import ARCSIPleiadesSensor
             sensorClass = ARCSIPleiadesSensor(debugMode, inputImage)
+        elif sensor == 'L3'	:
+            from arcsilib.arcsisensorliss3 import ARCSILISS_Sensor
+            sensorClass = ARCSILISS_Sensor(debugMode, inputImage)
         else:
             raise ARCSIException("Could not get a class representing the sensor specified from the factory.")
 
