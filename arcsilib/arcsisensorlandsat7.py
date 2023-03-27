@@ -815,7 +815,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         s.aot550 = aotVal
 
         # Band 1
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B1)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B1)
         s.run()
         sixsCoeffs[0,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[0,1] = float(s.outputs.values['coef_xb'])
@@ -825,7 +825,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         sixsCoeffs[0,5] = float(s.outputs.values['environmental_irradiance'])
 
         # Band 2
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B2)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B2)
         s.run()
         sixsCoeffs[1,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[1,1] = float(s.outputs.values['coef_xb'])
@@ -835,7 +835,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         sixsCoeffs[1,5] = float(s.outputs.values['environmental_irradiance'])
 
         # Band 3
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B3)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B3)
         s.run()
         sixsCoeffs[2,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[2,1] = float(s.outputs.values['coef_xb'])
@@ -845,7 +845,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         sixsCoeffs[2,5] = float(s.outputs.values['environmental_irradiance'])
 
         # Band 4
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B4)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B4)
         s.run()
         sixsCoeffs[3,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[3,1] = float(s.outputs.values['coef_xb'])
@@ -855,7 +855,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         sixsCoeffs[3,5] = float(s.outputs.values['environmental_irradiance'])
 
         # Band 5
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B5)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B5)
         s.run()
         sixsCoeffs[4,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[4,1] = float(s.outputs.values['coef_xb'])
@@ -865,7 +865,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         sixsCoeffs[4,5] = float(s.outputs.values['environmental_irradiance'])
 
         # Band 7
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B7)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B7)
         s.run()
         sixsCoeffs[5,0] = float(s.outputs.values['coef_xa'])
         sixsCoeffs[5,1] = float(s.outputs.values['coef_xb'])
@@ -972,7 +972,7 @@ class ARCSILandsat7Sensor (ARCSIAbstractSensor):
         s.aot550 = aotVal
 
         # Band 1 (Blue!)
-        s.wavelength = Py6S.Wavelength(Py6S.SixSHelpers.PredefinedWavelengths.LANDSAT_ETM_B1)
+        s.wavelength = Py6S.Wavelength(Py6S.PredefinedWavelengths.LANDSAT_ETM_B1)
         s.run()
         aX = float(s.outputs.values['coef_xa'])
         bX = float(s.outputs.values['coef_xb'])
